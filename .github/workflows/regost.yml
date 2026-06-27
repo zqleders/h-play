@@ -150,7 +150,7 @@ jobs:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
           SOCKS5_URL: ${{ secrets.SOCKS5_URL }}
-          PROXY: 127.0.0.1:1080
+         # PROXY: 127.0.0.1:1080
         run: |
           xvfb-run --server-args="-screen 0 1920x1080x24" python main2.py
 
